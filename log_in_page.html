@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<html lang="ro">
+
+<head>
+	<title>Jerry's Pizza</title>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="log_in_page_body">
+
+<header id="header">
+	<div id="top_bar">
+		<div id="logo">
+			<a href="home_page.html">
+				<img id="logo_content" src="logo_photo/logo.png" alt="logo">
+			</a>
+		</div>
+		<div id="contact">
+			<div id="call_us_plus_log">
+				<div id="call_us"><p>Sună și comandă</p></div>
+				<div id="log_in"><a href="log_in_page.html">Log in</a></div>
+				<div id="athentication"><a href="authentication_page.html">Authentication</a></div>	
+			</div>
+			<div class="phone_number">
+				<div id="short_number">*3030</div>
+				<div id="full_number">0373 00 00 00</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="general_nav_bar_wrapper" id="general_nav_bar_home_page">
+	<ul class="general_nav_bar">
+		<li><a class="active" href="home_page.html">ACASĂ</a></li>
+		<li>
+			<a class="button" href="pizza_page.html">MENIU</a>
+			<div id="dropdown">
+				<div class="menu_nav_bar_wrapper" id="menu_nav_bar_menu_page">
+					<ul class="menu_nav_bar">
+						<li><a href="pizza_page.html">PIZZA</a></li>
+						<li><a>PASTE</a></li>
+						<li><a>STRIPWICH</a></li>
+						<li><a>CALZONE</a></li>
+						<li><a>CHICKEN</a></li>
+						<li><a>SIDES</a></li>
+						<li><a>SALATE</a></li>
+						<li><a>DESERT</a></li>
+						<li><a>BĂUTURI</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li><a>OFERTE</a></li>
+		<li><a>MAGAZINE</a></li>
+		<li><a>JOBURI</a></li>
+		<li><img id="search_icon" src="search_icon/search_icon1.png" alt="search">
+	</ul>
+</div>
+
+		<section class="page_section">
+			<h2>Loghează-te</h2>
+			<header>
+				<div id="from_login_to_authentication">
+					<a href="authentication_page.html">Ai deja cont? Autentifică-te</a>
+				</div>
+			</header>
+			<form action="lab1home.html" method="GET">
+				<fieldset>
+					<legend>Formular de înscriere</legend>
+					First Name<input type="text" id="first_name" name="first_name" placeholder="Ion" maxlength="20" size="20"><br>
+					Last Name<input type="text" id="last_name" name="last_name" placeholder="Popescu" maxlength="20" size="20"><br>
+					Email<input type="email" id="email" name="email" placeholder="abcde@yahoo.com" size="20"><br>
+					Phone Number<input type="tel" id="phone_number" name="phone_number" placeholder="0729000000" pattern="[0]{1}[0-9]{9}" maxlength="10" size="20"><br>
+					Birthday<input type="date" id="birthday" name="birth_date"><br>
+					Tipul de mâncare preferată:
+					<input type="checkbox" name="food" value="romanian">Românească
+					<input type="checkbox" name="food" value="italian">Italiană
+					<input type="checkbox" name="food" value="french">Franceză
+					<input type="checkbox" name="food" value="mexican">Mexicană
+					<input type="checkbox" name="food" value="chinese">Chinezească<br>
+					De câte ori pe săptămână vă comandați în mod normal mâncare de pe internet?
+					<input type="radio" name="frecvency" value="minimum" checked="checked">1-2
+					<input type="radio" name="frecvency" value="medium">3-4
+					<input type="radio" name="frecvency" value="maximum"> 5 sau mai des<br>
+					Alegeți orașul în care locuiți:
+					<select name="city">
+						<optgroup label="Orașe unde facem livrări">
+							<option value="1">București</option>
+							<option value="2">Ploiești</option>
+							<option value="3">Pitești</option>
+							<option value="4">Brașov</option>
+							<option value="5">Constanța</option>
+							<option value="6">Balotești</option>
+							<option value="7">Popești Leordeni</option>
+						</optgroup>
+						<optgroup label="Urmează">
+							<option value="8" disabled="disabled">Zalău</option>
+							<option value="9" disabled="disabled">Dej</option>
+					</select><br>
+					Password<input type="password" id="password" name="password" placeholder="**********" size="20"><br>
+					Confirm Password<input type="password" id="password_confirm" name="confirm_password" placeholder="**********" size="20"><br>
+				</fieldset><br>
+				Detalii suplimentare:<br>
+				<textarea rows="10" cols="50" name="mesaj" maxlength="50"></textarea><br>
+				
+				<input id="submit_button" type="submit" name="submit">
+				
+				
+			</form>
+		</section>
+		<br><br>
+		<a href="https://validator.w3.org/nu/?doc=http://www.scs.ubbcluj.ro/~crci0189/Tema1/HTML5/login.html" target="_blank">HTML VALIDATOR</a>
+	</body>
+</html>
+			

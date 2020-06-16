@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html lang="ro">
+
+<head>
+	<title>Jerry's Pizza</title>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="log_in_page">
+
+<header id="header">
+	<div id="top_bar">
+		<div id="logo">
+			<a href="home_page.html">
+				<img id="logo_content" src="logo_photo/logo.png" alt="logo">
+			</a>
+		</div>
+		<div id="contact">
+			<div id="call_us_plus_log">
+				<div id="call_us"><p>Sună și comandă</p></div>
+				<div id="log_in"><a href="log_in_page.html">Log in</a></div>
+				<div id="athentication"><a href="authentication_page.html">Authentication</a></div>	
+			</div>
+			<div class="phone_number">
+				<div id="short_number">*3030</div>
+				<div id="full_number">0373 00 00 00</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="general_nav_bar_wrapper" id="general_nav_bar_home_page">
+	<ul class="general_nav_bar">
+		<li><a class="active" href="home_page.html">ACASĂ</a></li>
+		<li>
+			<a class="button" href="pizza_page.html">MENIU</a>
+			<div id="dropdown">
+				<div class="menu_nav_bar_wrapper" id="menu_nav_bar_menu_page">
+					<ul class="menu_nav_bar">
+						<li><a href="pizza_page.html">PIZZA</a></li>
+						<li><a>PASTE</a></li>
+						<li><a>STRIPWICH</a></li>
+						<li><a>CALZONE</a></li>
+						<li><a>CHICKEN</a></li>
+						<li><a>SIDES</a></li>
+						<li><a>SALATE</a></li>
+						<li><a>DESERT</a></li>
+						<li><a>BĂUTURI</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li><a>OFERTE</a></li>
+		<li><a>MAGAZINE</a></li>
+		<li><a>JOBURI</a></li>
+		<li><img id="search_icon" src="search_icon/search_icon1.png" alt="search">
+	</ul>
+</div>
+
+		<section class="page_section">
+			<h2>Autentifică-te</h2>
+			<header>
+				<div>
+					<a href="log_in_page.html">Nu ai cont? Creează-ți unul</a>
+				</div>
+			</header>
+			
+			<form action="lab1home.html" method="GET">
+				<fieldset>
+				<legend>Formular pentru autentificare</legend>
+				Email<input type="email" id="email" name="email" placeholder="abcde@yahoo.com" size="20"><br>
+				Password<input type="password" id="password" name="password" placeholder="**********" size="20"><br>
+				</fieldset>
+				<input type="submit" name="submit">
+			</form>
+		</section>
+		<br><br>
+		<a href="https://validator.w3.org/nu/?doc=http://www.scs.ubbcluj.ro/~crci0189/Tema1/HTML5/authentication.html" target="_blank">HTML VALIDATOR</a>
+	</body>
+</html>
